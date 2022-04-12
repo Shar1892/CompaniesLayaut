@@ -1,3 +1,10 @@
+# TensorCompaniesLayaut
+
+HTML/CSS макет списка компаний и карточки компании с данными от сервиса spp-api.
+
+Чтобы просмотреть карточку нужно бописать класс card_opened.
+Для просмотра нужного блока карточки нужно свойству display указать значение flex.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

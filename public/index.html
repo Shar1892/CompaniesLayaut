@@ -5,10 +5,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
+    <!--<meta
       name="description"
       content="Web site created using create-react-app"
-    />
+    />-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -18,11 +18,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>CompaniesLayaut</title>
+    <link rel="stylesheet" href="../src/index.css">
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <body class="body">
+    <!--<noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>-->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -33,5 +34,472 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="page">
+      <header class="header">
+        <h1 class="header__title">Компании</h1>
+        <div class="search">
+          <input class="search__input" type="text" placeholder='Введите название или ИНН'>
+          <button class="search__button"></button>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__header">
+          <p class="main__description-title">Название</p>
+          <div class="main__requisites-container">
+            <p class="main__requisites-title">ИНН</p>
+            <p class="main__requisites-title">КПП</p>
+          </div>
+        </div>
+        <div class="company-preview">
+          <div class="company-preview__description-container">
+            <div class="company-preview__row-container">
+              <h2 class="company-preview__name">ООО "Компания "Тензор"</h2>
+              <p class="company-preview__description">Ярославская обл</p>
+            </div>
+            <div class="company-preview__row-container">
+              <p class="company-preview__director">Уваров С. В.</p>
+              <p class="company-preview__description">Программное обеспечение</p>
+            </div>
+          </div>
+          <div class="company-preview__requisites-container">
+            <p class="company-preview__requisites">7605016030</p>
+            <p class="company-preview__requisites">760401001</p>
+          </div>
+        </div>
+        <div class="company-preview">
+          <div class="company-preview__description-container">
+            <div class="company-preview__row-container">
+              <h2 class="company-preview__name">ООО "Компания "Тензор"</h2>
+              <p class="company-preview__description">Ярославская обл</p>
+            </div>
+            <div class="company-preview__row-container">
+              <p class="company-preview__director">Уваров С. В.</p>
+              <p class="company-preview__description">Программное обеспечение</p>
+            </div>
+          </div>
+          <div class="company-preview__requisites-container">
+            <p class="company-preview__requisites">7605016030</p>
+            <p class="company-preview__requisites">760401001</p>
+          </div>
+        </div>
+        <div class="company-preview">
+          <div class="company-preview__description-container">
+            <div class="company-preview__row-container">
+              <h2 class="company-preview__name">ООО "Компания "Тензор"</h2>
+              <p class="company-preview__description">Ярославская обл</p>
+            </div>
+            <div class="company-preview__row-container">
+              <p class="company-preview__director">Уваров С. В.</p>
+              <p class="company-preview__description">Программное обеспечение</p>
+            </div>
+          </div>
+          <div class="company-preview__requisites-container">
+            <p class="company-preview__requisites">7605016030</p>
+            <p class="company-preview__requisites">760401001</p>
+          </div>
+        </div>
+        <div class="company-preview">
+          <div class="company-preview__description-container">
+            <div class="company-preview__row-container">
+              <h2 class="company-preview__name">ООО "Компания "Тензор"</h2>
+              <p class="company-preview__description">Ярославская обл</p>
+            </div>
+            <div class="company-preview__row-container">
+              <p class="company-preview__director">Уваров С. В.</p>
+              <p class="company-preview__description">Программное обеспечение</p>
+            </div>
+          </div>
+          <div class="company-preview__requisites-container">
+            <p class="company-preview__requisites">7605016030</p>
+            <p class="company-preview__requisites">760401001</p>
+          </div>
+        </div>
+      </main>
+      <section class="card card_opened">
+        <div class="card__header">
+          <div class=".card__header-information">
+            <div class="card__header-requisites-container">
+              <p class="card__header-region">Ярославль</p>
+            <div class="card__header-requisit-container">
+              <p class="card__header-requisit-name">ИНН</p>
+              <p class="card__header-requisit-value">7605016030</p>
+            </div>
+            <div class="card__header-requisit-container">
+              <p class="card__header-requisit-name">КПП</p>
+              <p class="card__header-requisit-value">760401001</p>
+            </div>
+          </div>
+          <h2 class="card__header-company-name">Компания Тензор, ООО</h2>
+          </div>
+          <button class="card__close-button"></button>
+        </div>
+        <div class="card__main">
+          <div class="card__content">
+            <section class="about-company">
+              <div class="about-company__info-container">
+                <div class="about-company__info">
+                  <div class="about-company__name-container">
+                    <h2 class="about-company__full-name">Общество с ограниченной ответственностью "Компания "Тензор"</h2>
+                  </div>
+                  <div class="about-company__okved-info">
+                    <p class="about-company__simple-text">Разработка компьютерного программного обеспечения</p>
+                    <p class="about-company__link-text about-company__link-text_13px">Ещё 17 видов деятельности</p>
+                  </div>
+                  <div class="about-company__director-info">
+                    <p class="about-company__dedicated-text">Уваров Сергей Васильевич</p>
+                    <p class="about-company__simple-text">Директор</p>
+                  </div>
+                  <div class="about-company__employees-info">
+                    <p class="about-company__employees-counter">500</p>
+                    <p class="about-company__simple-text">сотрудников</p>
+                    <p class="about-company__employees-difference">+50</p>
+                    <p class="about-company__salary-counter">500</p>
+                    <p class="about-company__simple-text">средняя з/п</p>
+                    <p class="about-company__salary-difference">-50</p>
+                  </div>
+                </div>
+                <div class="about-company__registration-info">
+                  <p class="about-company__link-text about-company__link-text_14px">Зарегистрирован 10.06.99</p>
+                  <p class="about-company__link-text about-company__link-text_14px">ОСНО</p>
+                </div>
+              </div>
+              <div class="about-company__financialBlock">
+                <p class="about-company__dedicated-text">Выручка: 500 млн</p>
+                <p class="about-company__dedicated-text">Стоимость: 500 млн</p>
+              </div>
+              <div class="about-company__about-container">
+                <h3 class="about-company__dedicated-text">О компании</h3>
+                <div class="about-company__text-container">
+                  <!--<p class="about-company__simple-text">Компания "Тензор" - это крупный холдинг</p>-->
+                  <p class="about-company__long-text">Компания "Тензор" - это крупный холдинг, занимающийся информационными технологиями. </p>
+                </div>
+              </div>
+            </section>
+            <section class="owners">
+              <div class="owners__header">
+                <h2 class="owners__title">ВЛАДЕЛЬЦЫ</h2>
+                <div class="owners__headers-container">
+                  <p class="owners__headers-INN">ИНН</p>
+                  <p class="owners__headers-cost">Сумма</p>
+                  <p class="owners__headers-share">%</p>
+                </div>
+              </div>
+              <div class="owners__list">
+                <div class="owners__owner-container">
+                  <div class="owners__owner-discription-container">
+                    <p class="owners__owner-name">Новиков Дмитрий Владимирович</p>
+                    <p class="owners__owner-discription">Ярославль с 24.09.02</p>
+                  </div>
+                  <div class="owners__owner-info-container">
+                    <p class="owners__owner-INN">760200554123</p>
+                    <p class="owners__owner-cost">45 338</p>
+                    <p class="owners__owner-share">7</p>
+                  </div>
+                </div>
+                <div class="owners__owner-container">
+                  <div class="owners__owner-discription-container">
+                    <p class="owners__owner-name">Новиков Дмитрий Владимирович</p>
+                    <p class="owners__owner-discription">Ярославль с 24.09.02</p>
+                  </div>
+                  <div class="owners__owner-info-container">
+                    <p class="owners__owner-INN">760200554123</p>
+                    <p class="owners__owner-cost">45 338</p>
+                    <p class="owners__owner-share">7</p>
+                  </div>
+                </div>
+                <div class="owners__owner-container">
+                  <div class="owners__owner-discription-container">
+                    <p class="owners__owner-name">Новиков Дмитрий Владимирович</p>
+                    <p class="owners__owner-discription">Ярославль с 24.09.02</p>
+                  </div>
+                  <div class="owners__owner-info-container">
+                    <p class="owners__owner-INN">760200554123</p>
+                    <p class="owners__owner-cost">45 338</p>
+                    <p class="owners__owner-share">7</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="branches">
+              <h2 class="branches__title">ФИЛИАЛЫ</h2>
+              <div class="branches__list">
+                <div class="branches__branch">
+                  <div class="branches__info-container">
+                    <h3 class="branches__branch-name">Филиал Тензора</h3>
+                    <p class="branches__branch-address">г. Москва, красная площадь</p>
+                  </div>
+                  <p class="branches__branch-KPP">526045001</p>
+                </div>
+                <div class="branches__branch">
+                  <div class="branches__info-container">
+                    <h3 class="branches__branch-name">Филиал Тензора</h3>
+                    <p class="branches__branch-address">г. Москва, красная площадь</p>
+                  </div>
+                  <p class="branches__branch-KPP">526045001</p>
+                </div>
+              </div>
+              <button class="branches__more-button">Ещё</button>
+            </section>
+            <section class="contacts">
+              <h2 class="contacts__title">КОНТАКТЫ</h2>
+              <div class="contacts__container">
+                <h3 class="contacts__subtitle">Телефоны</h3>
+                <div class="contacts__list">
+                  <p class="contacts__contact">89206539874</p>
+                  <p class="contacts__contact">89206539874</p>
+                </div>
+                <button class="contacts__more-button">Ещё</button>
+              </div>
+              <div class="contacts__container">
+                <h3 class="contacts__subtitle">Адреса лектронной почты</h3>
+                <div class="contacts__list">
+                  <p class="contacts__contact">mail@mail.ru</p>
+                  <p class="contacts__contact">mail@mail.ru</p>
+                </div>
+                <button class="contacts__more-button">Ещё</button>
+              </div>
+              <div class="contacts__container">
+                <h3 class="contacts__subtitle">Сайты</h3>
+                <div class="contacts__items-container">
+                  <p class="contacts__contact">website.com</p>
+                  <p class="contacts__contact">website.com</p>
+                </div>
+                <button class="contacts__more-button">Ещё</button>
+              </div>
+            </section>
+            <section class="courts">
+              <div class="courts__courts">
+                <h2 class="courts__title">СУДЫ</h2>
+                <div class="courts__courts-list">
+                  <div class="courts__court-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__court-info-container">
+                      <p class="courts__court-competitor">Энергостройсервис, ООО</p>
+                      <p class="courts__court-category">экономические споры по гражданским правоотношениям</p>
+                    </div>
+                    <p class="courts__court-number">А82-3563/2022</p>
+                  </div>
+                  <div class="courts__court-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__court-info-container">
+                      <p class="courts__court-competitor">Энергостройсервис, ООО</p>
+                      <p class="courts__court-category">экономические споры по гражданским правоотношениям</p>
+                    </div>
+                    <p class="courts__court-number">А82-3563/2022</p>
+                  </div>
+                  <div class="courts__court-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__court-info-container">
+                      <p class="courts__court-competitor">Энергостройсервис, ООО</p>
+                      <p class="courts__court-category">экономические споры по гражданским правоотношениям</p>
+                    </div>
+                    <p class="courts__court-number">А82-3563/2022</p>
+                  </div>
+                </div>
+                <button class="courts__more-button">Ещё</button>
+              </div>
+              <div class="courts__executive">
+                <h2 class="courts__title">ИСПОЛНИТЕЛЬНЫЕ ДОКУМЕНТЫ</h2>
+                <div class="courts__executive-list">
+                  <div class="courts__executive-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__executive-info-container">
+                      <p class="courts__executive-info">Акт по делу об административном правонарушении</p>
+                      <p class="courts__executive-info">Штраф ГИБДД: 2000 ₽</p>
+                    </div>
+                  </div>
+                  <div class="courts__executive-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__executive-info-container">
+                      <p class="courts__executive-info">Акт по делу об административном правонарушении</p>
+                      <p class="courts__executive-info">Штраф ГИБДД: 2000 ₽</p>
+                    </div>
+                  </div>
+                  <div class="courts__executive-container">
+                    <p class="courts__item-date">11.03.22</p>
+                    <div class="courts__executive-info-container">
+                      <p class="courts__executive-info">Акт по делу об административном правонарушении</p>
+                      <p class="courts__executive-info">Штраф ГИБДД: 2000 ₽</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="courts__more-button">Ещё</button>
+              </div>
+            </section>
+            <section class="pladges">
+              <h2 class="pladges__title">В ЗАЛОГЕ / В ЛИЗИНГЕ</h2>
+              <div class="pladges__list">
+                <div class="pladges__pladge-container">
+                  <p class="pladges__pladge-date">29.11.17</p>
+                  <div class="pladges__pladge-info-container">
+                    <p class="pladges__pladge-category">Средства транспортные железнодорожные</p>
+                    <p class="pladges__pladge-pladgee">МТС-Банк, ПАО</p>
+                    <p class="pladges__pladge-discription">Вагон-хоппер для зерна модели 19-9549 - 100единиц</p>
+                  </div>
+                  <p class="pladges__pladge-type">В лизинге</p>
+                </div>
+                <div class="pladges__pladge-container">
+                  <p class="pladges__pladge-date">29.11.17</p>
+                  <div class="pladges__pladge-info-container">
+                    <p class="pladges__pladge-category">Средства транспортные железнодорожные</p>
+                    <p class="pladges__pladge-pladgee">МТС-Банк, ПАО</p>
+                    <p class="pladges__pladge-discription">Вагон-хоппер для зерна модели 19-9549 - 100единиц</p>
+                  </div>
+                  <p class="pladges__pladge-type">В лизинге</p>
+                </div>
+                <div class="pladges__pladge-container">
+                  <p class="pladges__pladge-date">29.11.17</p>
+                  <div class="pladges__pladge-info-container">
+                    <p class="pladges__pladge-category">Средства транспортные железнодорожные</p>
+                    <p class="pladges__pladge-pladgee">МТС-Банк, ПАО</p>
+                    <p class="pladges__pladge-discription">Вагон-хоппер для зерна модели 19-9549 - 100единиц</p>
+                  </div>
+                  <p class="pladges__pladge-type">В лизинге</p>
+                </div>
+              </div>
+              <button class="pladges__more-button">Ещё</button>
+            </section>
+            <section class="inspections">
+              <h2 class="inspections__title">ПРОВЕРКИ</h2>
+              <div class="inspections__list">
+                <div class="inspections__inspection-container">
+                  <p class="inspections__inspection-date">21.06.21</p>
+                  <div class="inspections__info-container">
+                    <p class="inspections__inspection-name">Государственная инспекция труда в Ярославской области</p>
+                    <p class="inspections__inspection-objective">Осуществление федерального государственного надзора за соблюдением юридическим лицом или индивидуальным предпринимателем обязательных требований трудового законодательства и иных нормативных правовых актов содержащих нормы трудового права</p>
+                  </div>
+                </div>
+                <div class="inspections__inspection-container">
+                  <p class="inspections__inspection-date">21.06.21</p>
+                  <div class="inspections__info-container">
+                    <p class="inspections__inspection-name">Государственная инспекция труда в Ярославской области</p>
+                    <p class="inspections__inspection-objective">Осуществление федерального государственного надзора за соблюдением юридическим лицом или индивидуальным предпринимателем обязательных требований трудового законодательства и иных нормативных правовых актов содержащих нормы трудового права</p>
+                  </div>
+                </div>
+                <div class="inspections__inspection-container">
+                  <p class="inspections__inspection-date">21.06.21</p>
+                  <div class="inspections__info-container">
+                    <p class="inspections__inspection-name">Государственная инспекция труда в Ярославской области</p>
+                    <p class="inspections__inspection-objective">Осуществление федерального государственного надзора за соблюдением юридическим лицом или индивидуальным предпринимателем обязательных требований трудового законодательства и иных нормативных правовых актов содержащих нормы трудового права</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="vacancies">
+              <h2 class="vacancies__title">ВАКАНСИИ</h2>
+              <div class="vacancies__list">
+                <div class="vacancies__vacancy-container">
+                  <div class="vacancies__vacancy-discription-container">
+                    <div class="vacancies__vacancy-info-container">
+                      <p class="vacancies__vacancy-title">Специалист технической поддержки ЭДО</p>
+                      <p class="vacancies__vacancy-sity">Ярославль</p>
+                    </div>
+                    <p class="vacancies__vacancy-discription">Исходящие звонки потенциальным клиентам. Проведение онлайн-презентаций с заинтересованными клиентами. Работа с действующими клиентами по продлению.</p>
+                  </div>
+                  <div class="vacancies__vacancy-salary-container">
+                    <p class="vacancies__vacancy-salary">от 31 000 ₽</p>
+                    <p class="vacancies__vacancy-source">HeadHunter</p>
+                  </div>
+                </div>
+                <div class="vacancies__vacancy-container">
+                  <div class="vacancies__vacancy-discription-container">
+                    <div class="vacancies__vacancy-info-container">
+                      <p class="vacancies__vacancy-title">Специалист технической поддержки ЭДО</p>
+                      <p class="vacancies__vacancy-sity">Ярославль</p>
+                    </div>
+                    <p class="vacancies__vacancy-discription">Исходящие звонки потенциальным клиентам. Проведение онлайн-презентаций с заинтересованными клиентами. Работа с действующими клиентами по продлению.</p>
+                  </div>
+                  <div class="vacancies__vacancy-salary-container">
+                    <p class="vacancies__vacancy-salary">от 31 000 ₽</p>
+                    <p class="vacancies__vacancy-source">HeadHunter</p>
+                  </div>
+                </div>
+                <div class="vacancies__vacancy-container">
+                  <div class="vacancies__vacancy-discription-container">
+                    <div class="vacancies__vacancy-info-container">
+                      <p class="vacancies__vacancy-title">Специалист технической поддержки ЭДО</p>
+                      <p class="vacancies__vacancy-sity">Ярославль</p>
+                    </div>
+                    <p class="vacancies__vacancy-discription">Исходящие звонки потенциальным клиентам. Проведение онлайн-презентаций с заинтересованными клиентами. Работа с действующими клиентами по продлению.</p>
+                  </div>
+                  <div class="vacancies__vacancy-salary-container">
+                    <p class="vacancies__vacancy-salary">от 31 000 ₽</p>
+                    <p class="vacancies__vacancy-source">HeadHunter</p>
+                  </div>
+                </div>
+              </div>
+              <button class="vacancies__more-button">Ещё</button>
+            </section>
+            <section class="requisites">
+              <h2 class="requisites__title">РЕКВИЗИТЫ</h2>
+              <div class="requisites__name-container">
+                <p class="requisites__subtitle">Наименование</p>
+                <p class="requisites__info">Общество с ограниченной ответственностью "Компания "Тензор"</p>
+              </div>
+              <div class="requisites__requisites-container">
+                <div class="requisites__requisite-container">
+                  <p class="requisites__subtitle">ОГРН</p>
+                  <p class="requisites__requisit">1027600787994</p>
+                </div>
+                <div class="requisites__requisite-container">
+                  <p class="requisites__subtitle">Рег. номер ПФ</p>
+                  <p class="requisites__requisit">086-004-004145</p>
+                </div>              
+                <div class="requisites__requisite-container">
+                  <p class="requisites__subtitle">ОКПО</p>
+                  <p class="requisites__requisit">50946225780001</p>
+                </div>
+                <div class="requisites__requisite-container">
+                  <p class="requisites__subtitle">Рег. номер ФСС</p>
+                  <p class="requisites__requisit">7605019040/76001</p>
+                </div>
+                <div class="requisites__requisite-container">
+                  <p class="requisites__subtitle">ОКТМО</p>
+                  <p class="requisites__requisit">78701000001</p>
+                </div>
+              </div>
+              <div class="requisites__okved-container">
+                <p class="requisites__subtitle">ОКВЭД</p>
+                <p class="requisites__info">62.01 (Разработка компьютерного программного обеспечения)</p>
+                <p class="requisites__link">Всего 18</p>
+              </div>
+              <div class="requisites__registration-container">
+                <p class="requisites__registration-subtitle">Регистрация компании</p>
+                <p class="requisites__registration-date">10.06.99</p>
+              </div>
+            </section>
+          </div>
+          <menu class="card__menu">
+            <li class="card__menu-item card__menu-item_active">
+              <p class="card__menu-item-text card__menu-item-text_active">О компании</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Владельцы</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Филиалы</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Контакты</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Суды</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Залоги</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Проверки</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Вакансии</p>
+            </li>
+            <li class="card__menu-item">
+              <p class="card__menu-item-text">Реквизиты</p>
+            </li>
+          </menu>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
