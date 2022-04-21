@@ -1,0 +1,28 @@
+.body {
+	background-color: #edeef2;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	--block-padding: 15px 12px;
+
+	--title-text-color: #cc3d00;
+	--title-text-size: 18px;
+
+	--simple-text-color: #000000;
+	--light-text-color: #999999;
+	--pale-text-color: #8991a9;
+	--link-text-color: #313e78;
+
+	--text-size-large: 15px;
+	--text-size-normal: 14px;
+	--text-size-small: 13px;
+	--text-size-very-small: 12px;
+
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+}
