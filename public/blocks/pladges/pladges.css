@@ -28,8 +28,9 @@
 .pladges__pladge-container {
 	width: 100%;
 	margin-bottom: 5px;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 60px 1fr 65px;
+	column-gap: 5px;
 }
 
 .pladges__pladge-date {
@@ -41,7 +42,7 @@
 }
 
 .pladges__pladge-info-container {
-	width: calc(100% - 145px);
+	width: 100%;
 	margin: 0 10px;
 	display: flex;
 	flex-direction: column;
@@ -87,7 +88,6 @@
 }
 
 .pladges__more-button {
-	width: 30px;
 	margin-top: 5px;
 	font-size: var(--text-size-large);
 	color: var(--pale-text-color);
@@ -96,6 +96,7 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
+	align-self: flex-start;
 }
 
 .pladges__more-button:hover {

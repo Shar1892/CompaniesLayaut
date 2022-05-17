@@ -5,10 +5,8 @@
 	max-width: 1144px;
 	min-width: 768px;
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
+	display: grid;
+	grid-template-rows: 44px 1fr;
 }
 
 .page_hidden {

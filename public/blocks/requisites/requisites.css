@@ -49,7 +49,7 @@
 
 .requisites__requisite-container {
 	display: grid;
-	grid-template-columns: 110px calc(100% - 120px);
+	grid-template-columns: 110px 1fr;
 	column-gap: 10px;
 }
 

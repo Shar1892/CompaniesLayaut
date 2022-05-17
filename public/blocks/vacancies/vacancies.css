@@ -27,27 +27,29 @@
 
 .vacancies__vacancy-container {
 	width: 100%;
-	display: flex;
+	display: grid;
 	margin-bottom: 5px;
-	justify-content: space-between;
+	grid-template-columns: 1fr 125px;
+	column-gap: 15px;
 	align-items: baseline;
 }
 
 .vacancies__vacancy-discription-container {
-	width: calc(100% - 140px);
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
 .vacancies__vacancy-info-container {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 110px;
+	column-gap: 10px;
 	align-items: baseline;
 }
 
 .vacancies__vacancy-title {
-	max-width: calc(100% - 120px);
+	max-width: 100%;
 	margin: 0;
 	font-size: var(--text-size-normal);
 	color: var(--simple-text-color);
@@ -100,7 +102,6 @@
 }
 
 .vacancies__more-button {
-	width: 30px;
 	margin-top: 5px;
 	font-size: var(--text-size-large);
 	color: var(--pale-text-color);
@@ -109,6 +110,7 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
+	align-self: flex-start;
 }
 
 .vacancies__more-button:hover {

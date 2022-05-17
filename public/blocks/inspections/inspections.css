@@ -28,11 +28,11 @@
 .inspections__inspection-container {
 	margin: 5px 0;
 	width: 100%;
-	display: flex;
+	display: grid;
+	grid-template-columns: 60px 1fr;
 }
 
 .inspections__inspection-date {
-	width: 60px;
 	margin: 0;
 	font-size: var(--text-size-normal);
 	color: var(--simple-text-color);
@@ -40,7 +40,7 @@
 }
 
 .inspections__info-container {
-	width: calc(100% - 70px);
+	width: 100%;
 	margin-right: 10px;
 	display: flex;
 	flex-direction: column;

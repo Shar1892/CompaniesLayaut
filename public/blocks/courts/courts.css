@@ -34,13 +34,12 @@
 .courts__court-container {
 	width: 100%;
 	margin-bottom: 5px;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 60px 1fr 110px;
 	align-items: baseline;
 }
 
 .courts__item-date {
-	width: 60px;
 	margin: 0;
 	font-size: var(--text-size-normal);
 	color: var(--simple-text-color);
@@ -48,7 +47,7 @@
 }
 
 .courts__court-info-container {
-	width: calc(100% - 190px);
+	width: 100%;
 	margin: 0 10px;
 	display: flex;
 	flex-direction: column;
@@ -75,7 +74,6 @@
 }
 
 .courts__court-number {
-	width: 110px;
 	margin: 0;
 	font-size: var(--text-size-normal);
 	color: var(--pale-text-color);
@@ -84,7 +82,6 @@
 }
 
 .courts__more-button {
-	width: 30px;
 	margin-top: 5px;
 	font-size: var(--text-size-large);
 	color: var(--pale-text-color);
@@ -93,6 +90,7 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
+	align-self: flex-start;
 }
 
 .courts__more-button:hover {
@@ -116,11 +114,12 @@
 .courts__executive-container {
 	width: 100%;
 	margin-bottom: 5px;
-	display: flex;
+	display: grid;
+	grid-template-columns: 60px 1fr;
 }
 
 .courts__executive-info-container {
-	width: calc(100% - 70px);
+	width: 100%;
 	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
