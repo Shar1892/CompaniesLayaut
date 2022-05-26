@@ -1,0 +1,147 @@
+.card {
+	display: grid;
+	grid-template-rows: 70px 1fr;
+	width: 60%;
+	height: 100vh;
+	background-color: #ffffff;
+	box-shadow: -10px 0 10px #ccc;
+}
+
+.card_close {
+	display: none;
+}
+
+.card__header {
+	display: grid;
+	grid-template-columns: 1fr 28px;
+	column-gap: 15px;
+	width: 100%;
+	padding: 0;
+	padding-left: 12px;
+	box-sizing: border-box;
+	background-color: #f8f8f8;
+}
+
+.card__header-information {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.card__header-requisites-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.card__header-region {
+	margin: 0;
+	margin-right: 24px;
+	width: 200px;
+	font-size: var(--text-size-normal);
+	color: var(--pale-text-color);
+	font-weight: normal;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.card__header-requisit-container {
+	display: flex;
+	align-items: center;
+}
+
+.card__header-requisit-container:first-of-type {
+	margin-right: 5px;
+}
+
+.card__header-requisit-name {
+	margin: 0;
+	margin-right: 13px;
+	font-size: var(--text-size-normal);
+	color: var(--pale-text-color);
+	font-weight: normal;
+}
+
+.card__header-requisit-value {
+	margin: 0;
+	width: 100px;
+	font-size: var(--text-size-large);
+	color: var(--simple-text-color);
+	font-weight: normal;
+}
+
+.card__header-company-name {
+	margin: 5px 0;
+	max-width: 550px;
+	font-size: 20px;
+	color: var(--simple-text-color);
+	font-weight: bold;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.card__close-button {
+	width: 28px;
+	height: 28px;
+	background-image: url(../../images/close.svg);
+	background-size: contain;
+	background-position: center;
+	padding: 0;
+	border: 0;
+	border-radius: 11px;
+	background-color: #f8f8f8;
+	outline: 0;
+}
+
+.card__close-button:hover {
+	cursor: pointer;
+}
+
+.card__main {
+	display: grid;
+	grid-template-columns: 1fr 250px;
+	width: 100%;
+}
+
+.card__content {
+	display: flex;
+	width: 100%;
+}
+
+.card__menu {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 4px;
+	width: 250px;
+	background-color: #f8f8f8;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.card__menu-item {
+	width: 100%;
+	margin: 0;
+	padding: 5px 12px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.card__menu-item_active {
+	background-color: #edeef2;
+}
+
+.card__menu-item-text {
+	margin: 0;
+	font-size: var(--text-size-large);
+	color: var(--link-text-color);
+	font-weight: normal;
+}
+
+.card__menu-item-text_active {
+	font-weight: bold;
+}
